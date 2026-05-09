@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BrewMasters Coffee Shop</title>
+    <title>Brew Haven - Premium Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -11,78 +13,89 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">☕ BrewMasters</div>
-            <button class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="logo">☕ Brew Haven</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="word">Artisan</span>
-                <span class="word">Coffee</span>
-                <span class="word">Crafted</span>
-                <span class="word">Daily</span>
-            </h1>
-            <p class="hero-subtitle">Experience the perfect blend of flavor, aroma, and passion in every cup</p>
-            <button class="cta-button">Explore Our Menu</button>
+            <h1 class="hero-title">Brew the Perfect Moment</h1>
+            <p class="hero-subtitle">Handcrafted espresso, premium beans, and cozy vibes</p>
+            <button class="cta-button">Order Now</button>
         </div>
-        <img src="https://picsum.photos/600/500?random=1" alt="Coffee" class="hero-image">
+        <div class="hero-image">
+            <img src="https://picsum.photos/500/600?random=1" alt="Coffee">
+        </div>
     </section>
 
-    <!-- Featured Products -->
-    <section id="menu" class="menu-preview">
-        <div class="section-header">
-            <h2>Our Signature Drinks</h2>
-            <p>Handpicked selections crafted by our master baristas</p>
-        </div>
-        
-        <div class="cards-grid">
-            <div class="card">
-                <div class="card-image" style="background: linear-gradient(135deg, #8B4513, #D2691E);">
-                    <span class="badge">Best Seller</span>
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2 class="section-title">Our Menu</h2>
+        <div class="menu-grid">
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="https://picsum.photos/300/250?random=2" alt="Espresso">
                 </div>
-                <h3>Espresso Elegance</h3>
-                <p>Rich, bold espresso with a velvety crema. A classic favorite.</p>
-                <div class="price">$3.50</div>
+                <h3>Classic Espresso</h3>
+                <p>Rich and bold, single shot of our finest dark roast</p>
+                <span class="price">$2.50</span>
             </div>
 
-            <div class="card">
-                <div class="card-image" style="background: linear-gradient(135deg, #C19A6B, #F0E68C);">
-                    <span class="badge">New</span>
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="https://picsum.photos/300/250?random=3" alt="Cappuccino">
                 </div>
-                <h3>Caramel Macchiato</h3>
-                <p>Smooth espresso with steamed milk and caramel drizzle.</p>
-                <div class="price">$4.50</div>
+                <h3>Velvety Cappuccino</h3>
+                <p>Smooth espresso with creamy milk and foam</p>
+                <span class="price">$4.00</span>
             </div>
 
-            <div class="card">
-                <div class="card-image" style="background: linear-gradient(135deg, #8B6F47, #D4A574);">
-                    <span class="badge">Popular</span>
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="https://picsum.photos/300/250?random=4" alt="Latte">
                 </div>
-                <h3>Mocha Bliss</h3>
-                <p>Espresso blended with rich chocolate and creamy milk foam.</p>
-                <div class="price">$4.75</div>
+                <h3>Silky Latte</h3>
+                <p>Espresso blended with steamed milk for comfort</p>
+                <span class="price">$4.50</span>
             </div>
 
-            <div class="card">
-                <div class="card-image" style="background: linear-gradient(135deg, #6B4423, #A0522D);">
-                    <span class="badge">Limited</span>
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="https://picsum.photos/300/250?random=5" alt="Cold Brew">
                 </div>
-                <h3>Cold Brew Perfection</h3>
-                <p>Smooth, chilled cold brew with a hint of vanilla ice cream.</p>
-                <div class="price">$3.99</div>
+                <h3>Cold Brew</h3>
+                <p>Refreshing and smooth, served over ice</p>
+                <span class="price">$3.50</span>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="https://picsum.photos/300/250?random=6" alt="Macchiato">
+                </div>
+                <h3>Bold Macchiato</h3>
+                <p>Espresso "marked" with a touch of milk foam</p>
+                <span class="price">$3.75</span>
+            </div>
+
+            <div class="menu-card">
+                <div class="menu-image">
+                    <img src="https://picsum.photos/300/250?random=7" alt="Affogato">
+                </div>
+                <h3>Sweet Affogato</h3>
+                <p>Vanilla ice cream drowned in hot espresso</p>
+                <span class="price">$5.00</span>
             </div>
         </div>
     </section>
@@ -90,108 +103,63 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="about-content">
-            <img src="https://picsum.photos/500/400?random=2" alt="Coffee Shop" class="about-image">
-            <div class="about-text">
-                <h2>Brewed with Passion</h2>
-                <p>Since 2015, BrewMasters has been dedicated to sourcing the finest coffee beans from sustainable farms around the world. Our baristas train extensively to ensure every cup is perfection.</p>
-                <p>We believe that great coffee brings people together. That's why our cozy space is designed for connection—whether you're catching up with friends, meeting clients, or finding your quiet moment.</p>
-                <div class="features">
-                    <div class="feature">
-                        <span class="feature-icon">🌍</span>
-                        <span>100% Sustainable Sourcing</span>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">👨‍🍳</span>
-                        <span>Expert Baristas</span>
-                    </div>
-                    <div class="feature">
-                        <span class="feature-icon">☕</span>
-                        <span>Specialty Roasts</span>
-                    </div>
+            <h2 class="section-title">Why Choose Brew Haven?</h2>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="about-icon">🌍</div>
+                    <h3>Ethically Sourced</h3>
+                    <p>We source our beans directly from sustainable farms around the world</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">⚙️</div>
+                    <h3>Expert Crafted</h3>
+                    <p>Our baristas are trained to perfection, every cup is a masterpiece</p>
+                </div>
+                <div class="about-card">
+                    <div class="about-icon">🏡</div>
+                    <h3>Cozy Atmosphere</h3>
+                    <p>A warm, welcoming space designed for connection and creativity</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="stats">
-        <div class="stat-item">
-            <div class="stat-number">8K+</div>
-            <div class="stat-label">Happy Customers</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">45+</div>
-            <div class="stat-label">Menu Items</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">15</div>
-            <div class="stat-label">Origin Countries</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number">9+</div>
-            <div class="stat-label">Years Excellence</div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <div class="section-header">
-            <h2>Visit Us Today</h2>
-            <p>We'd love to serve you a perfect cup of coffee</p>
-        </div>
-
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-item">
-                    <h3>📍 Location</h3>
-                    <p>123 Coffee Lane, Brew City, BC 12345</p>
-                </div>
-                <div class="info-item">
-                    <h3>🕐 Hours</h3>
-                    <p>Mon - Fri: 6:00 AM - 8:00 PM<br>Sat - Sun: 7:00 AM - 9:00 PM</p>
-                </div>
-                <div class="info-item">
-                    <h3>📞 Contact</h3>
-                    <p>Phone: (555) 123-4567<br>Email: hello@brewmasters.com</p>
-                </div>
-            </div>
-
+        <h2 class="section-title">Get in Touch</h2>
+        <div class="contact-wrapper">
             <form class="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Your Email" required>
                 <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
+                <button type="submit" class="submit-button">Send Message</button>
             </form>
+            <div class="contact-info">
+                <div class="info-item">
+                    <h3>📍 Location</h3>
+                    <p>123 Coffee Lane<br>Seattle, WA 98101</p>
+                </div>
+                <div class="info-item">
+                    <h3>📞 Phone</h3>
+                    <p>(206) 555-0123</p>
+                </div>
+                <div class="info-item">
+                    <h3>🕐 Hours</h3>
+                    <p>Mon-Fri: 6am - 8pm<br>Sat-Sun: 7am - 9pm</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <div class="footer-section">
-                <h4>BrewMasters</h4>
-                <p>Crafting exceptional coffee experiences since 2015.</p>
+            <p>&copy; 2024 Brew Haven Coffee Shop. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#" class="social-link">Instagram</a>
+                <a href="#" class="social-link">Facebook</a>
+                <a href="#" class="social-link">Twitter</a>
             </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 BrewMasters Coffee Shop. All rights reserved.</p>
         </div>
     </footer>
 
