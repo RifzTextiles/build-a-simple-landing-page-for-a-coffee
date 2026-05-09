@@ -4,188 +4,202 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brew Haven - Premium Coffee Shop</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">☕ Brew Haven</div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <div class="logo">
+                <span class="logo-icon">☕</span>
+                <span class="logo-text">Brew Haven</span>
+            </div>
+            <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul class="nav-links" id="navLinks">
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#menu">Menu</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#" class="btn-reserve">Reserve Table</a></li>
             </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <div class="hero-gradient"></div>
         <div class="hero-content">
-            <h1 class="hero-title">
-                <span class="word">Brew</span>
-                <span class="word">Your</span>
-                <span class="word">Perfect</span>
-                <span class="word">Cup</span>
-            </h1>
-            <p class="hero-subtitle">Premium coffee crafted for coffee lovers who appreciate excellence</p>
-            <button class="cta-button">Explore Our Menu</button>
+            <h1 class="hero-title">Brew Your Perfect Moment</h1>
+            <p class="hero-subtitle">Freshly roasted coffee, warm vibes, and unforgettable moments</p>
+            <button class="btn-primary">Explore Our Menu</button>
         </div>
-        <div class="hero-image">
-            <img src="https://picsum.photos/600/500?random=1" alt="Premium Coffee">
-        </div>
+        <img src="https://picsum.photos/600/400?random=1" alt="Coffee shop interior" class="hero-image">
     </section>
 
-    <!-- Features Section -->
-    <section id="about" class="features">
-        <h2 class="section-title">Why Choose Brew Haven</h2>
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-icon">🌱</div>
-                <h3>Ethically Sourced</h3>
-                <p>We partner with fair-trade farms to bring you the finest, sustainably grown beans</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">🔥</div>
-                <h3>Expertly Roasted</h3>
-                <p>Small-batch roasting ensures peak freshness and bold, complex flavors in every cup</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">👨‍🍳</div>
-                <h3>Craft Baristas</h3>
-                <p>Our certified baristas master every brewing method to perfection</p>
-            </div>
-            <div class="feature-card">
-                <div class="feature-icon">☕</div>
-                <h3>Premium Selection</h3>
-                <p>Discover single-origin rarities and signature blends unavailable elsewhere</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Menu Section -->
-    <section id="menu" class="menu">
-        <h2 class="section-title">Our Signature Drinks</h2>
-        <div class="menu-grid">
-            <div class="menu-item">
-                <img src="https://picsum.photos/400/300?random=2" alt="Espresso">
-                <h3>Classic Espresso</h3>
-                <p>Bold and intense, our signature shot of pure excellence</p>
-                <span class="price">$3.50</span>
-            </div>
-            <div class="menu-item">
-                <img src="https://picsum.photos/400/300?random=3" alt="Cappuccino">
-                <h3>Silky Cappuccino</h3>
-                <p>Perfectly balanced with velvety microfoam and rich crema</p>
-                <span class="price">$5.00</span>
-            </div>
-            <div class="menu-item">
-                <img src="https://picsum.photos/400/300?random=4" alt="Latte">
-                <h3>Smooth Latte</h3>
-                <p>Creamy and comforting, topped with beautiful latte art</p>
-                <span class="price">$5.50</span>
-            </div>
-            <div class="menu-item">
-                <img src="https://picsum.photos/400/300?random=5" alt="Cold Brew">
-                <h3>Cold Brew</h3>
-                <p>Smooth, refreshing, and naturally sweet cold coffee</p>
-                <span class="price">$4.50</span>
-            </div>
-            <div class="menu-item">
-                <img src="https://picsum.photos/400/300?random=6" alt="Macchiato">
-                <h3>Classic Macchiato</h3>
-                <p>Espresso with just a touch of foam for the purist</p>
-                <span class="price">$4.00</span>
-            </div>
-            <div class="menu-item">
-                <img src="https://picsum.photos/400/300?random=7" alt="Americano">
-                <h3>Rich Americano</h3>
-                <p>Full-bodied espresso with hot water for pure coffee joy</p>
-                <span class="price">$3.75</span>
+    <!-- Featured Products -->
+    <section id="menu" class="featured">
+        <div class="container">
+            <h2 class="section-title">Our Signature Blends</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=2" alt="Espresso">
+                    <h3>Classic Espresso</h3>
+                    <p>Rich, bold, and perfectly balanced. Our signature single-origin blend.</p>
+                    <span class="price">$3.50</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=3" alt="Latte">
+                    <h3>Velvet Latte</h3>
+                    <p>Creamy steamed milk combined with smooth espresso shots.</p>
+                    <span class="price">$4.50</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=4" alt="Cold Brew">
+                    <h3>Iced Cold Brew</h3>
+                    <p>Smooth, refreshing, and naturally sweet cold brew concentrate.</p>
+                    <span class="price">$4.00</span>
+                </div>
+                <div class="product-card">
+                    <img src="https://picsum.photos/300/300?random=5" alt="Cappuccino">
+                    <h3>Artisan Cappuccino</h3>
+                    <p>Traditional Italian cappuccino with handmade latte art.</p>
+                    <span class="price">$4.50</span>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Brew Haven</h2>
+                    <p>Since 2015, Brew Haven has been serving the finest specialty coffee in our cozy neighborhood café. Every cup tells a story—from the origin of our beans to the skill of our baristas.</p>
+                    <p>We're committed to sustainable sourcing, fair-trade practices, and creating a community space where coffee lovers connect.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Daily Customers</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">20+</span>
+                            <span class="stat-label">Coffee Blends</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">9 yrs</span>
+                            <span class="stat-label">In Business</span>
+                        </div>
+                    </div>
+                </div>
+                <img src="https://picsum.photos/500/500?random=6" alt="Coffee shop" class="about-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
     <section class="testimonials">
-        <h2 class="section-title">What Our Customers Say</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"The best coffee I've ever had. Every visit is worth it!"</p>
-                <span class="author">- Sarah M.</span>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"Exceptional quality and friendly baristas. This is my go-to spot."</p>
-                <span class="author">- James R.</span>
-            </div>
-            <div class="testimonial-card">
-                <div class="stars">★★★★★</div>
-                <p>"Finally found a place that takes coffee as seriously as I do!"</p>
-                <span class="author">- Emma T.</span>
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Best coffee in town! The baristas really know their craft. Highly recommend!"</p>
+                    <span class="author">- Sarah M.</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The atmosphere is perfect for working or catching up with friends. Love it!"</p>
+                    <span class="author">- James L.</span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Fresh, delicious, and always consistent. This is my daily coffee spot."</p>
+                    <span class="author">- Emma T.</span>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="contact">
-        <h2 class="section-title">Visit Us Today</h2>
-        <div class="contact-container">
-            <div class="contact-info">
-                <h3>📍 Location</h3>
-                <p>123 Coffee Street<br>Downtown District<br>New York, NY 10001</p>
-                
-                <h3>🕐 Hours</h3>
-                <p>Monday - Friday: 6:00 AM - 8:00 PM<br>
-                Saturday - Sunday: 7:00 AM - 9:00 PM</p>
-                
-                <h3>📞 Contact</h3>
-                <p>Phone: (555) 123-4567<br>Email: hello@brewhaven.com</p>
+        <div class="container">
+            <h2 class="section-title">Visit Us Today</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Coffee Street, Brew City, BC 12345</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">🕐</span>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 6am - 8pm<br>Sat-Sun: 7am - 9pm</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">✉️</span>
+                        <div>
+                            <h3>Email</h3>
+                            <p>hello@brewhaven.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
             </div>
-            <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Brew Haven</h4>
-                <p>Crafting the perfect cup, one shot at a time.</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Brew Haven</h4>
+                    <p>Your neighborhood coffee destination since 2015.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#">Facebook</a>
+                        <a href="#">Instagram</a>
+                        <a href="#">Twitter</a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Brew Haven. All rights reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew Haven Coffee Shop. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
